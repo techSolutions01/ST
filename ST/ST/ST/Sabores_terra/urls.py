@@ -3,5 +3,5 @@ from Sabores_terra import views
 
 
 urlpatterns = [
-    path('', views.index, name='index.html'),
+    path('', views.index, name='product-cebola'),
 ]
