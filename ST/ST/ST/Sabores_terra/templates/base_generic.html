@@ -59,16 +59,16 @@
 <div class="elementor-element elementor-element-d97f010 e-con-full e-flex e-con e-child" data-id="d97f010" data-element_type="container">
     <div class="elementor-element elementor-element-4e5fbf9d twbb-nav-menu__align-left twbb-nav-menu__text-align-left twbb-nav-menu--indicator-classic twbb-nav-menu--toggle twbb-nav-menu--burger twbb-nav-menu--stretch yes twbb-nav-menu--dropdown-tablet elementor-widget elementor-widget-twbb-nav-menu" data-id="4e5fbf9d" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;,&quot;full_width&quot;:&quot; yes&quot;}" data-widget_type="twbb-nav-menu.default">
     <div class="elementor-widget-container">
-      <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-horizontal e--pointer-none"><ul id="menu-1-4e5fbf9d" class="twbb-nav-menu twbb-menu_term_id-41056"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="coleção.html" class="twbb-item">Coleções</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="Contate-nos.html" class="twbb-item">Contato</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="sobre.html" class="twbb-item">Sobre</a></li>
+      <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-horizontal e--pointer-none"><ul id="menu-1-4e5fbf9d" class="twbb-nav-menu twbb-menu_term_id-41056"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="{% url 'coleção' %}" class="twbb-item">Coleções</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="{% url 'Contate-nos' %}" class="twbb-item">Contato</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="{% url 'sobre' %}" class="twbb-item">Sobre</a></li>
 </ul></nav>
 <div class="twbb-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
 <i aria-hidden="true" role="presentation" class="twbb-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="twbb-menu-toggle__icon--close eicon-close"></i>            <span class="elementor-screen-only">Menu</span>
 </div>
-<nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-4e5fbf9d" class="twbb-nav-menu twbb-menu_term_id-41056"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="coleção.html" class="twbb-item">Coleções</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="Contate-nos.html" class="twbb-item">Contato</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="sobre.html" class="twbb-item">Sobre</a></li>
+<nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-4e5fbf9d" class="twbb-nav-menu twbb-menu_term_id-41056"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="{% url 'coleção' %}" class="twbb-item">Coleções</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="{% url 'Contate-nos' %}" class="twbb-item">Contato</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="{% url 'sobre' %}" class="twbb-item">Sobre</a></li>
 </ul></nav>
 <style>
 .twbb-nav-menu ul {display: none;}      </style>
@@ -118,7 +118,7 @@
     <div class="elementor-element elementor-element-77b451d7 elementor-align-right elementor-hidden-mobile elementor-invisible elementor-widget elementor-widget-button" data-id="77b451d7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="button.default">
     <div class="elementor-widget-container">
         <div class="elementor-button-wrapper">
-<a class="elementor-button elementor-button-link elementor-size-sm" href="monitorshop.html">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="{% url 'coleção' %}">
             <span class="elementor-button-content-wrapper">
                         <span class="elementor-button-text">NOSSA LOJA</span>
         </span>
@@ -175,13 +175,13 @@
         </div>
         <div class="elementor-element elementor-element-12fc3eec elementor-widget__width-auto twbb-nav-menu__align-left twbb-nav-menu--indicator-classic elementor-widget elementor-widget-twbb-nav-menu" data-id="12fc3eec" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;menu-columns&quot;:&quot;1&quot;,&quot;menu-columns_tablet&quot;:&quot;1&quot;,&quot;menu-columns_mobile&quot;:&quot;1&quot;}" data-widget_type="twbb-nav-menu.default">
         <div class="elementor-widget-container">
-          <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-vertical e--pointer-text e--animation-float"><ul id="menu-1-12fc3eec" class="twbb-nav-menu twbb-menu_term_id-41056 sm-vertical twbb-menu-columns"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="coleção.html" class="twbb-item">Coleções</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="Contate-nos.html" class="twbb-item">Contato</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="sobre.html" class="twbb-item">Sobre</a></li>
+          <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-vertical e--pointer-text e--animation-float"><ul id="menu-1-12fc3eec" class="twbb-nav-menu twbb-menu_term_id-41056 sm-vertical twbb-menu-columns"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="{% url 'coleção' %}" class="twbb-item">Coleções</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="{% url 'Contate-nos' %}" class="twbb-item">Contato</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="{% url 'sobre' %}" class="twbb-item">Sobre</a></li>
 </ul></nav>
-<nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-12fc3eec" class="twbb-nav-menu twbb-menu_term_id-41056 sm-vertical twbb-menu-columns"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="coleção.html" class="twbb-item">Collections</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="Contate-nos.html" class="twbb-item">Contato</a></li>
-<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="sobre.html" class="twbb-item">Sobre</a></li>
+<nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-12fc3eec" class="twbb-nav-menu twbb-menu_term_id-41056 sm-vertical twbb-menu-columns"><li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529509"><a href="{% url 'coleção' %}" class="twbb-item">Collections</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529508"><a href="{% url 'Contate-nos' %}" class="twbb-item">Contato</a></li>
+<li class="a:1:{i:0;s:6:&quot;a1i0s0&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529507"><a href="{% url 'sobre' %}" class="twbb-item">Sobre</a></li>
 </ul></nav>
   <style>
         </style>
@@ -218,7 +218,7 @@
         <div class="elementor-widget-container">
             <div class="elementor-portfolio elementor-grid elementor-posts-container">
         <article class="elementor-portfolio-item elementor-post  post-529491 product type-product status-publish has-post-thumbnail product_cat-laranjas-valid-monitor instock sale shipping-taxable purchasable product-type-simple">
-    <a class="elementor-post__thumbnail__link" href="product-tomate.html">
+    <a class="elementor-post__thumbnail__link" href="{% url 'product-tomate' %}">
         <div class="elementor-portfolio-item__img elementor-post__thumbnail">
     <img loading="lazy" width="1000" height="1000" src="https://10web-site.ai/38/wp-content/uploads/sites/41/2024/07/product06_x9c8v7Lh.webp" class="attachment-medium size-medium wp-image-529480" alt="" />		</div>
         <div class="elementor-portfolio-item__overlay">
@@ -226,7 +226,7 @@
         </a>
 </article>
         <article class="elementor-portfolio-item elementor-post  post-529492 product type-product status-publish has-post-thumbnail product_cat-pimentoes-valid-monitor last instock shipping-taxable purchasable product-type-simple">
-    <a class="elementor-post__thumbnail__link" href="product-cebola.html">
+    <a class="elementor-post__thumbnail__link" href="{% url 'product-cebola' %}">
         <div class="elementor-portfolio-item__img elementor-post__thumbnail">
     <img loading="lazy" width="1024" height="1024" src="https://10web-site.ai/38/wp-content/uploads/sites/41/2024/07/1-AN01-933-U_alt1_7e6ac460-38a6-4e32-a9c1-b043b706f68d_1400x_x9c8v7Lh.webp" class="attachment-medium size-medium wp-image-529466" alt="" />		</div>
         <div class="elementor-portfolio-item__overlay">
@@ -234,7 +234,7 @@
         </a>
 </article>
         <article class="elementor-portfolio-item elementor-post  post-529489 product type-product status-publish has-post-thumbnail product_cat-cominho-valid-monitor first instock sale shipping-taxable purchasable product-type-simple">
-    <a class="elementor-post__thumbnail__link" href="product-cominho.html">
+    <a class="elementor-post__thumbnail__link" href="{% url 'product-cominho' %}">
         <div class="elementor-portfolio-item__img elementor-post__thumbnail">
     <img loading="lazy" width="1000" height="1000" src="https://10web-site.ai/38/wp-content/uploads/sites/41/2024/07/product04_x9c8v7Lh.webp" class="attachment-medium size-medium wp-image-529479" alt="" />		</div>
         <div class="elementor-portfolio-item__overlay">
@@ -242,7 +242,7 @@
         </a>
 </article>
         <article class="elementor-portfolio-item elementor-post  post-529490 product type-product status-publish has-post-thumbnail product_cat-couve-valid-monitor instock sale shipping-taxable purchasable product-type-simple">
-    <a class="elementor-post__thumbnail__link" href="product-banana.html">
+    <a class="elementor-post__thumbnail__link" href="{% url 'product-banana' %}">
         <div class="elementor-portfolio-item__img elementor-post__thumbnail">
     <img loading="lazy" width="1024" height="1024" src="https://10web-site.ai/38/wp-content/uploads/sites/41/2024/07/vertical02_x9c8v7Lh.webp" class="attachment-medium size-medium wp-image-529468" alt="" />		</div>
         <div class="elementor-portfolio-item__overlay">
@@ -250,7 +250,7 @@
         </a>
 </article>
         <article class="elementor-portfolio-item elementor-post  post-529487 product type-product status-publish has-post-thumbnail product_cat-maca-valid-monitor instock sale shipping-taxable purchasable product-type-simple">
-    <a class="elementor-post__thumbnail__link" href="product-maça.html">
+    <a class="elementor-post__thumbnail__link" href="{% url 'product-maça' %}">
         <div class="elementor-portfolio-item__img elementor-post__thumbnail">
     <img loading="lazy" width="1920" height="1280" src="https://10web-site.ai/38/wp-content/uploads/sites/41/2024/07/parallax06_x9c8v7Lh.webp" class="attachment-medium size-medium wp-image-529483" alt="" />		</div>
         <div class="elementor-portfolio-item__overlay">
@@ -258,7 +258,7 @@
         </a>
 </article>
         <article class="elementor-portfolio-item elementor-post  post-529488 product type-product status-publish has-post-thumbnail product_cat-alface-valid-monitor last instock shipping-taxable purchasable product-type-simple">
-    <a class="elementor-post__thumbnail__link" href="product-alface.html">
+    <a class="elementor-post__thumbnail__link" href="{% url 'product-alface' %}">
         <div class="elementor-portfolio-item__img elementor-post__thumbnail">
     <img loading="lazy" width="1000" height="1000" src="https://10web-site.ai/38/wp-content/uploads/sites/41/2024/07/product01_x9c8v7Lh.webp" class="attachment-medium size-medium wp-image-529484" alt="" />		</div>
         <div class="elementor-portfolio-item__overlay">
@@ -274,13 +274,13 @@
 <div class="elementor-element elementor-element-f6788ba e-con-full e-flex e-con e-child" data-id="f6788ba" data-element_type="container">
         <div class="elementor-element elementor-element-58769ad twbb-nav-menu--indicator-classic elementor-widget elementor-widget-twbb-nav-menu" data-id="58769ad" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="twbb-nav-menu.default">
         <div class="elementor-widget-container">
-          <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-horizontal e--pointer-underline e--animation-fade"><ul id="menu-1-58769ad" class="twbb-nav-menu twbb-menu_term_id-41055"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529503"><a href="monitorshop.html" class="twbb-item">Shop</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529502"><a href="sobre.html" class="twbb-item">Sobre</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529501"><a href="Contate-nos.html" class="twbb-item">Contato</a></li>
+          <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-horizontal e--pointer-underline e--animation-fade"><ul id="menu-1-58769ad" class="twbb-nav-menu twbb-menu_term_id-41055"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529503"><a href="{% url 'monitorshop'%}" class="twbb-item">Shop</a></li>
+<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529502"><a href="{% url 'sobre' %}" class="twbb-item">Sobre</a></li>
+<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529501"><a href="{% url 'Contate-nos'%}" class="twbb-item">Contato</a></li>
 </ul></nav>
-<nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-58769ad" class="twbb-nav-menu twbb-menu_term_id-41055"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529503"><a href="monitorshop.html" class="twbb-item">Shop</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529502"><a href="sobre.html" class="twbb-item">Sobre</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529501"><a href="Contate-nos.html" class="twbb-item">Contato</a></li>
+<nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-58769ad" class="twbb-nav-menu twbb-menu_term_id-41055"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529503"><a href="{% url 'monitorshop'%}" class="twbb-item">Shop</a></li>
+<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529502"><a href="{% url 'sobre' %}" class="twbb-item">Sobre</a></li>
+<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-529501"><a href="{% url 'Contate-nos'%}" class="twbb-item">Contato</a></li>
 </ul></nav>
   <style>
         </style>
