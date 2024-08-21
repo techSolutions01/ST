@@ -3,7 +3,7 @@ from Sabores_terra import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('Login.html/', views.urls, name='Login'),
+    path('Login.html/', views.cadastro, name='Login'),
     path('index.html/',  views.index, name='index'),
     path('monitorshop.html/',  views.monitorshop, name='monitorshop'),
     path('product-alface.html/',  views.product_alface, name='product-alface'),

@@ -1,11 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
 def index(request):
     return render(request, 'index.html')
-
-def urls(request):
-    return render(request, "Login.html")
 
 def monitorshop(request):
     return render(request, "monitorshop.html")
@@ -54,3 +50,6 @@ def contate_nos(request):
 
 def feed(request):
     return render(request, "38feed.html")
+
+def cadastro(request):
+    return render(request, "Login.html")
