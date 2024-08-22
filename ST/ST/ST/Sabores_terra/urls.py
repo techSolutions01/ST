@@ -3,7 +3,7 @@ from Sabores_terra import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('Login.html/', views.cadastro, name='Login'),
+    path('Login.html/', views.Login, name='Login'),
     path('index.html/',  views.index, name='index'),
     path('monitorshop.html/',  views.monitorshop, name='monitorshop'),
     path('product-alface.html/',  views.product_alface, name='product-alface'),
@@ -20,6 +20,7 @@ urlpatterns = [
     path('coleção.html/',  views.coleção, name='coleção'),
     path('Contate-nos.html/',  views.contate_nos, name='contate-nos'),
     path('38feed.html/', views.feed, name='38feed'),
+    path('cadastro.html/', views.cadastro, name='cadastro'),
 ]
     
     

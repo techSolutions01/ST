@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
 
 def index(request):
     return render(request, 'index.html')
@@ -51,5 +55,32 @@ def contate_nos(request):
 def feed(request):
     return render(request, "38feed.html")
 
+@csrf_exempt
+def Login(request):
+    if(request.method=="GET"):
+        return render(request, "Login.html")
+    else:
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        senha = request.POST.get('senha')
+        usuario = username=username
+        if usuario:
+            return HttpResponse("CORONEL DEMALON")
+
+           
+    
+@csrf_exempt
 def cadastro(request):
-    return render(request, "Login.html")
+     if request.method == 'GET':
+        return render(request, 'cadastro.html')
+     else:
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        senha = request.POST.get('senha')
+        
+
+        user = User.objects.filter(username=username).first()
+        
+        user = User.objects.create_user(username=username, email=email, password=senha)
+        user.save()
+        

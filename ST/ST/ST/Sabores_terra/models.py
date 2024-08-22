@@ -2,6 +2,7 @@
 from django.db import models
 from shortuuid.django_fields import ShortUUIDField
 from django.utils.html import mark_safe
+from django.contrib.auth.models import User
 # Create your models here.
 
 STATUS = (
@@ -43,3 +44,10 @@ class Produto(models.Model):
     
     def __str__(self):
         return self.titulo
+class Cliente(models.Model):
+    Nome_do_cliente =models.CharField(max_length=50)
+    email = models.EmailField(max_length=50)
+    senha = models.CharField(max_length=20)
+    def __str__(self):
+        return self.Nome_do_cliente
+
