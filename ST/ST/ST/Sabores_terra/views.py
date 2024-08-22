@@ -54,21 +54,7 @@ def contate_nos(request):
 
 def feed(request):
     return render(request, "38feed.html")
-
-@csrf_exempt
-def Login(request):
-    if(request.method=="GET"):
-        return render(request, "Login.html")
-    else:
-        username = request.POST.get('username')
-        email = request.POST.get('email')
-        senha = request.POST.get('senha')
-        usuario = username=username
-        if usuario:
-            return HttpResponse("CORONEL DEMALON")
-
-           
-    
+   
 @csrf_exempt
 def cadastro(request):
      if request.method == 'GET':
@@ -83,4 +69,21 @@ def cadastro(request):
         
         user = User.objects.create_user(username=username, email=email, password=senha)
         user.save()
+        return render(request, "index.html")
         
+@csrf_exempt
+def Login(request):
+    if(request.method=="GET"):
+        return render(request, "Login.html")
+    else:
+        username = request.POST.get('username')
+        senha = request.POST.get('senha')
+        usuario = authenticate(username=username, password=senha)
+        if usuario:
+            login(request,usuario)
+            return HttpResponse("foi")
+        else:
+            return HttpResponse("Merda")
+            
+
+       
