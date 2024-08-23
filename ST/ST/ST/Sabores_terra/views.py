@@ -64,12 +64,12 @@ def cadastro(request):
         email = request.POST.get('email')
         senha = request.POST.get('senha')
         
-
-        user = User.objects.filter(username=username).first()
         
-        user = User.objects.create_user(username=username, email=email, password=senha)
+        
+        user = User.objects.create_user(username=username, email=email, password=senha, is_staff=True)
         user.save()
         return render(request, "index.html")
+       
         
 @csrf_exempt
 def Login(request):
